@@ -1,0 +1,44 @@
+<html>
+<head>
+    <meta name="viewport" content= "width=device-width,initial-scale=1.0">
+    <title>Contact Form </title>
+    <link rel = "stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class ="container">
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3>Contact US</h3>
+                <input type="text" id = "name" placeholder ="Your Name" required>
+                <input type="email" id = "email" placeholder ="Email id" required>
+                <input type="text" id = "Class" placeholder ="Class" required>
+                <input type="number" id = "rollno" placeholder ="Roll NO." required>
+                <input type="number" id = "phone" placeholder ="Phone no" required>
+                <textarea id ="message" rows="4"placeholder ="Message"></textarea>
+                <button type ="submit">Submit</button>
+        </form>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "shansaraf75@gmail.com",
+                Password : "bogshxzrrscmgtvk",
+                To : "shansaraf75@gmail.com",
+                From : document.getElementById("email").value,
+                Subject : "This is the subject",
+                Body : "Name:"+document.getElementById("name").value
+                +"<br> Email: "+document.getElementById("email").value
+                +"<br> Class: "+document.getElementById("Class").value
+                +"<br> Roll NO: "+document.getElementById("rollno").value
+                +"<br> Phone NO: "+document.getElementById("phone").value
+                +"<br> Message: "+document.getElementById("message").value
+
+            }).then(
+            message => alert("Message Sent Successfully")
+            );
+        }
+    </script>
+</body>
+</html>
