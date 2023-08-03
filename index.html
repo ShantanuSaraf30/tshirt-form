@@ -5,31 +5,37 @@
     
 
 </head>
-<body>
-    <div class ="container">
+<body style="background-color: black;">
+    <div class ="container" style="background-color: coral;font-family: Arial, Helvetica, sans-serif;" >
         <form >
             <h3> Customized T shirts Form</h3>
-                <label>Name</label>
+                <label><b>Name</b></label>
                 <input type="text" id = "name" placeholder ="Your Name" required><br>
-                <label>Email</label>
+                <label><b>Email</b></label>
                 <input type="email" id = "email" placeholder ="Email id" required><br>
-                <label>Tagline</label>
-                <input type="text" id = "Tagline" placeholder ="Tagline" required><br>
-                <label>Colour</label>
+                <label><b>Tagline</b></label>
+                <input type="text" id = "Tagline" placeholder ="Tagline" ><br>
+                <label><b> Phone NO.</b></label>
+                <input type="tel" id="phoneno" placeholder="Phone No" required><br>
+                
+                <label><b>Colour</b></label>
                 <input type="color" id = "Colour" placeholder ="Colour" required><br>
-                <label>Size:</label>
+                <label><b>Size:</b></label>
                 <input type="radio" id="Small" name="size" value="Small">
                 <label for="Samll">Small</label>
                 <input type="radio" id="Medium" name="size" value="Medium">
                 <label for="Medium">Medium</label>
                 <input type="radio" id="javascript" name="size" value="Large">
                 <label for="Large">Large</label><br>
-                <label>Address</label>
+                <label><b>Address</b></label>
                 <textarea id ="Address" rows="4"placeholder ="Address"></textarea><br>
-                <label>Delivery Date</label>
+                <label><b>Delivery Date</b></label>
                 <input type="date" id = "Delivery date" placeholder ="Delivery date" required><br>
+                <label for="myfile"><b>Upload Image:</b></label>
+                <input type="file" id="myfile" name="myfile"><br>
                 <button type ="submit">Submit</button>
                 <input type="reset"><br>
+                
             
         </form>
     </div>
