@@ -1,47 +1,53 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing : border-box;
-    font-family: 'poppins,sans-serif';
-
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    background: #001660;
-    display : flex;
-    align-items: center;
-    justify-content: center;
-
-}
-form{
-    background:white ;
-    display: flex;
-    flex-direction :column ;
-    padding: 2vw 5vw;
-    width: 90%;
-    max-width: 600px;
-    border-radius:10px;
-
-}
-formh3{
-    color:#555 ;
-    front-weight:800;
-    margin-bottom: 20px;
-     
-}
-form input, form textarea{
-    border: 0;
-    margin: 10px 0;
+/* Apply CSS styling to the form */
+.container {
+    width: 80%;
+    margin: auto;
     padding: 20px;
-    outline:none;
-    background: #f5f5f5;
-    font-size: 16px;
-
-
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
 }
-#btn{
-    width: 150px;
-    padding: 6px;
+
+form {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="color"] {
+    vertical-align: middle;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button[type="submit"],
+input[type="reset"] {
+    padding: 10px 20px;
+    background-color: coral;
+    border: none;
+    color: white;
     cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: darkorange;
 }
